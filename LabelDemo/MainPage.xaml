@@ -1,0 +1,54 @@
+﻿ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="LabelDemo.MainPage"
+ BackgroundColor="LightSteelBlue"><shapes:StackLayout  xmlns:shapes="http://xamarin.com/schemas/2014/forms/design" Padding="5,10">
+    <shapes:Label Padding="10"
+ Text="Это текст с параметрами отображения по умолчанию" />
+    <shapes:Label Padding="10"
+ FontSize="20" TextColor="Black"
+ Text="Стиль bold, интервал между буквами равен 5"
+ FontAttributes="Bold"
+ CharacterSpacing="5" />
+    <shapes:Label Padding="10" FontSize="20" TextColor="Black"
+ TextDecorations="Underline"
+ Text="Текст с подчеркиванием" />
+    <shapes:Label Padding="10" FontSize="20" TextColor="Black"
+ TextDecorations="Strikethrough"
+ Text="Перечеркнутый текст" />
+    <shapes:Label Padding="10" FontSize="30"
+ TextColor="DarkGreen"
+ Text="Усечение текста в элементе управления Label"
+ LineBreakMode="MiddleTruncation"
+ MaxLines="2" />
+    <shapes:Label Padding="10">
+        <shapes:Label.FormattedText>
+            <shapes:FormattedString>
+                <shapes:Span Text="Red Bold Text, "
+ TextColor="DarkGreen"
+ FontAttributes="Bold"
+ FontSize="18" />
+                <shapes:Span Text="Default Text, "
+ TextColor="DarkGreen"
+ FontSize="20"/>
+                <shapes:Span Text="Italic small text"
+ TextColor="DarkGreen"
+ FontAttributes="Italic"
+ FontSize="22" />
+            </shapes:FormattedString>
+        </shapes:Label.FormattedText>
+    </shapes:Label>
+    <shapes:Label Padding="10"
+ LineBreakMode="WordWrap"
+ TextColor="Black"
+ FontSize="20"
+ Text= "Чтобы нарисовать прямоугольник,
+ необходимо создать объект Rectangle"
+ LineHeight="1.5"/>
+    <shapes:Label Padding="10"
+ LineBreakMode="WordWrap"
+ TextColor="Blue"
+ FontSize="20"
+ Text="Чтобы закрасить прямоугольник, необходимо использовать свойство Fill"
+ LineHeight="2.5" />
+</shapes:StackLayout>
+</ContentPage>
